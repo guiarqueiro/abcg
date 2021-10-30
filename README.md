@@ -12,5 +12,4 @@ Developed by Harlen Batagelo.
 ### License
 
 ABCg is licensed under the MIT License. See [LICENSE](https://github.com/hbatagelo/abcg/blob/main/LICENSE) for more information.
-"Entrega 1 - Computaá∆o Gr†fica" 
-"Entrega 1 Computaá∆o Gr†fica" 
+"Entrega 1 - Computa√ß√£o Gr√°fica" 
