@@ -46,3 +46,8 @@
 8	2739	6573580976186587	spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj	c4415aa7df119447
 11	2789	6573580976695256	spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj	e2593e372eba6798
 2790	12192	0	bin/SpaceInvasion.exe	85ecdd97244c7ddc
+6	2627	6573601170479385	spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj	a4a12ee2898898e6
+8	2766	6573601171925518	spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj	c4415aa7df119447
+12	2842	6573601172663547	spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj	e2593e372eba6798
+5	2164	6573601549076125	spaceinvasion/CMakeFiles/SpaceInvasion.dir/alienship.cpp.obj	e0ed238542c4998f
+2164	11624	0	bin/SpaceInvasion.exe	85ecdd97244c7ddc

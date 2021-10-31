@@ -1,20 +1,20 @@
 #include "randomizer.hpp"
 
-float Randomizer::getRandomNumber(float start, float end, bool isNegativeAcceptable) {
-  std::uniform_real_distribution<float> m_randomNumber{start, end};
-  std::default_random_engine m_randomEngine;
+float Randomizer::getRndNum(float init, float end, bool requiresNegative) {
+  std::uniform_real_distribution<float> m_randomNum{init, end};
+  std::default_random_engine m_randomizer;
   
   auto seed{std::chrono::steady_clock::now().time_since_epoch().count()};
-  m_randomEngine.seed(seed);
+  m_randomizer.seed(seed);
 
-  float result = m_randomNumber(m_randomEngine);
+  float random = m_randomNum(m_randomizer);
 
-  if (isNegativeAcceptable) {
-    std::uniform_real_distribution<float> m_randomNegative{0, 1};
-    int rndNumber = m_randomNegative(m_randomEngine);
-    int multiplier = rndNumber > 0.5f ? 1 : -1;
-    result *= multiplier; 
+  if (requiresNegative) {
+    std::uniform_real_distribution<float> m_randomNeg{0, 1};
+    int randomNumb = m_randomNeg(m_randomizer);
+    int multiplier = randomNumb > 0.5f ? 1 : -1;
+    random *= multiplier; 
   }
 
-  return result;
+  return random;
 }

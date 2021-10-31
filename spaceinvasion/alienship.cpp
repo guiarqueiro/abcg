@@ -15,12 +15,11 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
   m_scale = 0.10f;
 
   float horizontalPosition =
-      Randomizer::getRandomNumber(DefaultValues::SCREEN_LEFT_LIMIT + m_scale,
-                            DefaultValues::SCREEN_RIGHT_LIMIT - m_scale, true);
+      Randomizer::getRndNum(DefaultValues::SCREEN_LEFT_LIMIT + m_scale, DefaultValues::SCREEN_RIGHT_LIMIT - m_scale, true);
   m_translation = glm::vec2{horizontalPosition, verticalPosition};
 
   float horizontalVelocity =
-      Randomizer::getRandomNumber(0.8f, 1.2f/*1.0f*/, true);
+      Randomizer::getRndNum(0.8f, 1.2f, true);
   m_velocity = glm::vec2{horizontalVelocity, 0.0f};
 
   m_hpBase = 3;
@@ -113,7 +112,7 @@ void AlienShip::updatePosition(float deltaTime) {
 void AlienShip::updateShooting() {
   if (m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
     std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.0f};
-    if (Randomizer::getRandomNumber(0.0f, 1.0f, false) > 0.90f) {
+    if (Randomizer::getRndNum(0.0f, 1.0f, false) > 0.90f) {
       m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
     } else {
       m_bulletCoolDownTimer.restart();

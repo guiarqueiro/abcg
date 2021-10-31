@@ -6,7 +6,7 @@
 
 class Randomizer {
   public:
-    static float getRandomNumber(float start, float end, bool isNegativeAcceptable);    
+    static float getRndNum(float init, float end, bool requiresNegative);    
     
 };
 
