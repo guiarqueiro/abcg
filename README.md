@@ -1,15 +1,16 @@
-ABCg
+SpaceInvaders_ativ1
 ======
 
-Development framework accompanying the course MCTA008-17 Computer Graphics at [UFABC](https://www.ufabc.edu.br/).
+### Controles
+* Mouse move a nave. Botão esquerdo do mouse atira as balas
+### Link do jogo
+* URL: 
+### Creditos
 
-----
+Leonardo Vitturi Ribeiro RA:11201722342
+Guilherme Arqueiro RA:
 
-### Credits
+### Descrição
+    A aplicação foi desenvolvida com o OPENGL e a Biblioteca ABCg para avaliação como atividade 1 da Disciplina de Computação Gráfica 2021-Q3.
+    O código do projeto toma como referência os projetos apresentados nas notas de aulas da disciplina, fazendo as adaptações necessárias.
 
-Developed by Harlen Batagelo.
-
-### License
-
-ABCg is licensed under the MIT License. See [LICENSE](https://github.com/hbatagelo/abcg/blob/main/LICENSE) for more information.
-"Entrega 1 - Computação Gráfica" 

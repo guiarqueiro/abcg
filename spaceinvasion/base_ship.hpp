@@ -9,7 +9,6 @@
 
 class Bullets;
 class OpenGLWindow;
-class StarLayers;
 
 class BaseShip {
  public:
@@ -21,7 +20,7 @@ class BaseShip {
  protected:
   friend Bullets;
   friend OpenGLWindow;
-  friend StarLayers;
+
 
   GLuint m_program{};
   GLint m_translationLoc{};
@@ -32,17 +31,19 @@ class BaseShip {
   GLuint m_vbo{};
   GLuint m_ebo{};
 
+  ActionData m_actionData;
+  TypeData m_typeData;
+
   glm::vec4 m_color{1};
   float m_scale{0.150f};
   int m_hpBase{};
   int m_currentLifePoints{};
+  glm::vec2 m_forward{0.0f, 1.0f};
   glm::vec2 m_translation{glm::vec2(0)};
   glm::vec2 m_velocity{glm::vec2(0)};
-  glm::vec2 m_forward{0.0f, 1.0f};
 
   abcg::ElapsedTimer m_bulletCoolDownTimer;
-  ActionData m_actionData;
-  TypeData m_typeData;
+
 };
 
 #endif

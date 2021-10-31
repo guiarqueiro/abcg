@@ -13,9 +13,9 @@ void PlayerShip::initializeGL(GLuint program) {
 
   m_hpBase = 5;
   m_currentLifePoints = m_hpBase;
-  m_translation =
-      glm::vec2(0, -0.8f);
   m_velocity = glm::vec2(0);
+  m_translation = glm::vec2(0, -0.8f);
+  
 
   std::array<glm::vec2, 10> positions{
       glm::vec2{-02.5f, +02.5f} /*0*/, glm::vec2{-15.5f, -02.5f} /*1*/,
@@ -25,7 +25,7 @@ void PlayerShip::initializeGL(GLuint program) {
       glm::vec2{+15.5f, -02.5f} /*8*/, glm::vec2{+02.5f, +02.5f}} /*9*/;
 
   for (auto &position : positions) {
-    position /= glm::vec2{15.5f, 15.5f};
+    position /= glm::vec2{15.5f, 15.5f}; 
   }
 
   std::array<int, 24> indices{
@@ -66,7 +66,9 @@ void PlayerShip::paintGL(const GameData &gameData) {
   glBindVertexArray(m_vao);
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
+  
   m_color = DefaultValues::LBLUE_COLOR;
+
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 10 * 3, GL_UNSIGNED_INT, nullptr);
   glBindVertexArray(0);
@@ -93,6 +95,6 @@ void PlayerShip::update(float deltaTime) {
 void PlayerShip::takeDamage() { m_currentLifePoints--; }
 
 bool PlayerShip::reachMouse() {
-  float interval = glm::abs(m_lastMousePosition - m_translation.x);
-  return interval < 0.01f;
+  float space = glm::abs(m_lastMousePosition - m_translation.x);
+  return space < 0.01f;
 }

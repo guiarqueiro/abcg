@@ -63,11 +63,11 @@ void Bullets::terminateGL() {
   glDeleteVertexArrays(1, &m_vao);
 }
 
-void Bullets::update(BaseShip &ship, const GameData &gameData,
-                     float deltaTime) {
+void Bullets::update(BaseShip &ship, const GameData &gameData,float deltaTime) {
+
   if (ship.m_actionData.m_input[static_cast<size_t>(Action::Fire)] &&
       gameData.m_state == State::Playing &&
-      ship.m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
+      ship.m_bulletCoolDownTimer.elapsed() > 0.25) {
     createBullet(ship);
   }
 
@@ -85,7 +85,7 @@ void Bullets::update(BaseShip &ship, const GameData &gameData,
 void Bullets::createBullet(BaseShip &ship) {
   ship.m_bulletCoolDownTimer.restart();
 
-  auto bulletSpeed{0.75f};
+  auto bulletSpeed{0.6f};
 
   Bullet bullet{.m_dead = false,
                 .m_translation = ship.m_translation,

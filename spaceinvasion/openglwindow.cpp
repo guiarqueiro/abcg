@@ -28,8 +28,7 @@ void OpenGLWindow::handleEvent(SDL_Event &event) {
       m_player.m_actionData.m_input.reset(static_cast<size_t>(Action::MouseLeft));
       m_player.m_actionData.m_input.set(static_cast<size_t>(Action::MouseRight));
     } else if (normalizedMousePosition < m_player.m_translation.x) {
-      m_player.m_actionData.m_input.reset(
-          static_cast<size_t>(Action::MouseRight));
+      m_player.m_actionData.m_input.reset(static_cast<size_t>(Action::MouseRight));
       m_player.m_actionData.m_input.set(static_cast<size_t>(Action::MouseLeft));
     }
   }
@@ -59,10 +58,10 @@ void OpenGLWindow::restart() {
   m_gameData.m_state = State::Playing;
 
   m_player.initializeGL(m_objectsProgram);
-  m_bullets.initializeGL(m_objectsProgram);
-
   m_aliens.clear();
+
   m_aliens.resize(AlienQtt);
+  m_bullets.initializeGL(m_objectsProgram);
   float verticalPosition = 0.90f;
 
   for (auto &enemy : m_aliens) {
@@ -102,10 +101,11 @@ void OpenGLWindow::paintGL() {
   glClear(GL_COLOR_BUFFER_BIT);
   glViewport(0, 0, m_viewportWidth, m_viewportHeight);
 
-  m_bullets.paintGL();
   m_player.paintGL(m_gameData);
 
+  m_bullets.paintGL();
   for (auto &enemy : m_aliens) enemy.paintGL(m_gameData);
+
 }
 
 void OpenGLWindow::paintUI() {
@@ -147,9 +147,10 @@ void OpenGLWindow::resizeGL(int width, int height) {
 
 void OpenGLWindow::terminateGL() {
   glDeleteProgram(m_objectsProgram);
-
-  m_bullets.terminateGL();
+  
   m_player.terminateGL();
+  m_bullets.terminateGL();
+
   for (auto &enemy : m_aliens) enemy.terminateGL();
   
 }

@@ -12,37 +12,39 @@
 //#include "hpbar.hpp"
 
 const int AlienQtt = 5;
-const float AlienDistance = 0.20f;
+const float AlienDistance = 0.15f;
 
 
 class OpenGLWindow : public abcg::OpenGLWindow {
  protected:
-  void resizeGL(int width, int height) override;
-  void handleEvent(SDL_Event& event) override;
   void initializeGL() override;
   void terminateGL() override;
   void paintGL() override;
   void paintUI() override;
+  void resizeGL(int width, int height) override;
+  void handleEvent(SDL_Event& event) override;
 
  private:
-  GLuint m_objectsProgram{};
-  int m_lastmousepos{0};
   int m_viewportHeight{};
   int m_viewportWidth{};
+  
+  GLuint m_objectsProgram{};
+  int m_lastmousepos{0};
 
-  abcg::ElapsedTimer m_restartWaitTimer;
-  std::list<AlienShip> m_aliens;
   GameData m_gameData;
   Bullets m_bullets;
-  ImFont* m_font{};
   PlayerShip m_player;
+  ImFont* m_font{};
+  abcg::ElapsedTimer m_restartWaitTimer;
+  std::list<AlienShip> m_aliens;
+
   //HpBar m_hpbar;
 
-  void checkShot();
-  void checkState();
-
+ 
   void restart();
   void update();
+  void checkShot();
+  void checkState(); 
 };
 
 #endif
