@@ -1,5 +1,5 @@
-#ifndef UTIL_HPP_
-#define UTIL_HPP_
+#ifndef RANDOMIZER_HPP_
+#define RANDOMIZER_HPP_
 
 #include <random>
 #include "abcg.hpp"
