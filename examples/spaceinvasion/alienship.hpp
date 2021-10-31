@@ -10,7 +10,7 @@
 #include "randomizer.hpp"
 
 class AlienShip : public BaseShip {
-  const Type SHIP_TYPE = Type::Alien;
+  const Type objType = Type::Alien;
 
  public:
   void initializeGL(GLuint program, float verticalPosition);

@@ -14,7 +14,7 @@ void PlayerShip::initializeGL(GLuint program) {
   m_hpBase = 5;
   m_currentLifePoints = m_hpBase;
   m_velocity = glm::vec2(0);
-  m_translation = glm::vec2(0, -0.8f);
+  m_translation = glm::vec2(0, -0.70f);
   
 
   std::array<glm::vec2, 10> positions{
@@ -67,7 +67,7 @@ void PlayerShip::paintGL(const GameData &gameData) {
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
   
-  m_color = DefaultValues::LBLUE_COLOR;
+  m_color = {0.153f, 0.723f, 0.102f, 1.0f};
 
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 10 * 3, GL_UNSIGNED_INT, nullptr);

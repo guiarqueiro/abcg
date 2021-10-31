@@ -24,7 +24,7 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
 
   m_hpBase = 3;
   m_currentLifePoints = m_hpBase;
-  m_typeData.m_type = SHIP_TYPE;
+  m_typeData.m_type = objType;
 
   std::array<glm::vec2, 8> positions{
       glm::vec2{-10.0f, +03.0f} /*0*/, glm::vec2{-10.0f, -03.0f} /*1*/,
