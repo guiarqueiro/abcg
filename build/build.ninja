@@ -570,6 +570,13 @@ build examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj: CX
   OBJECT_DIR = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir
   OBJECT_FILE_DIR = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir
 
+build examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/starlayers.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/examples/spaceinvasion/starlayers.cpp || cmake_object_order_depends_target_SpaceInvasion
+  DEP_FILE = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir\starlayers.cpp.obj.d
+  FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
+  INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
+  OBJECT_DIR = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir
+  OBJECT_FILE_DIR = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SpaceInvasion
@@ -578,7 +585,7 @@ build examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj: CX
 #############################################
 # Link the executable bin\SpaceInvasion.exe
 
-build bin/SpaceInvasion.exe: CXX_EXECUTABLE_LINKER__SpaceInvasion_Debug examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/bullets.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/playership.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/alienship.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
+build bin/SpaceInvasion.exe: CXX_EXECUTABLE_LINKER__SpaceInvasion_Debug examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/bullets.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/playership.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/alienship.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir/starlayers.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
   FLAGS = -g -flto -fno-fat-lto-objects
   LINK_LIBRARIES = abcg/libabcg.a  -lmingw32  -lSDL2main  -lSDL2  -lglew32  -lopengl32  C:/msys64/mingw64/lib/libglew32.dll.a  -lopengl32  -lglu32  abcg/external/fmt/libfmt.a  abcg/external/imgui/libimgui.a  -lmingw32  -mwindows  C:/msys64/mingw64/lib/libSDL2main.a  C:/msys64/mingw64/lib/libSDL2.dll.a  C:/msys64/mingw64/lib/libSDL2_image.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = examples\spaceinvasion\CMakeFiles\SpaceInvasion.dir

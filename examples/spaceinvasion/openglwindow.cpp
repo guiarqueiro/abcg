@@ -41,7 +41,8 @@ void OpenGLWindow::initializeGL() {
   if (m_font == nullptr) {
     throw abcg::Exception{abcg::Exception::Runtime("Cannot load font file")};
   }
-
+  m_starsProgram = createProgramFromFile(getAssetsPath() + "stars.vert",
+                                         getAssetsPath() + "stars.frag");
   m_objectsProgram = createProgramFromFile(getAssetsPath() + "objects.vert",
                                            getAssetsPath() + "objects.frag");
 
@@ -57,6 +58,7 @@ void OpenGLWindow::initializeGL() {
 void OpenGLWindow::restart() {
   m_gameData.m_state = State::Playing;
 
+  m_starLayers.initializeGL(m_starsProgram, 25);
   m_player.initializeGL(m_objectsProgram);
   m_aliens.clear();
 
@@ -78,6 +80,7 @@ void OpenGLWindow::update() {
     restart();
     return;
   }
+  m_starLayers.update(deltaTime);
   m_player.update(deltaTime);
   m_bullets.update(m_player, m_gameData, deltaTime);
   //m_hpbar.update(deltaTime);
@@ -101,6 +104,7 @@ void OpenGLWindow::paintGL() {
   glClear(GL_COLOR_BUFFER_BIT);
   glViewport(0, 0, m_viewportWidth, m_viewportHeight);
 
+  m_starLayers.paintGL();
   m_player.paintGL(m_gameData);
 
   m_bullets.paintGL();
@@ -146,11 +150,13 @@ void OpenGLWindow::resizeGL(int width, int height) {
 }
 
 void OpenGLWindow::terminateGL() {
+  glDeleteProgram(m_starsProgram);
   glDeleteProgram(m_objectsProgram);
   
   m_player.terminateGL();
   m_bullets.terminateGL();
-
+  m_starLayers.terminateGL();
+  
   for (auto &enemy : m_aliens) enemy.terminateGL();
   
 }

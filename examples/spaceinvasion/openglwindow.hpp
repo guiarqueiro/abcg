@@ -9,7 +9,7 @@
 #include "bullets.hpp"
 #include "alienship.hpp"
 #include "playership.hpp"
-//#include "hpbar.hpp"
+#include "starlayers.hpp"
 
 const int AlienQtt = 5;
 const float AlienDistance = 0.15f;
@@ -27,9 +27,9 @@ class OpenGLWindow : public abcg::OpenGLWindow {
  private:
   int m_viewportHeight{};
   int m_viewportWidth{};
-  
+
+  GLuint m_starsProgram{};
   GLuint m_objectsProgram{};
-  //int m_lastmousepos{0};
 
   GameData m_gameData;
   Bullets m_bullets;
@@ -37,6 +37,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   ImFont* m_font{};
   abcg::ElapsedTimer m_restartWaitTimer;
   std::list<AlienShip> m_aliens;
+  StarLayers m_starLayers;
 
   //HpBar m_hpbar;
 

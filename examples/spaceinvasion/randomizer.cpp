@@ -11,8 +11,8 @@ float Randomizer::getRndNum(float init, float end, bool requiresNegative) {
 
   if (requiresNegative) {
     std::uniform_real_distribution<float> m_randomNeg{0, 1};
-    int randomNumb = m_randomNeg(m_randomizer);
-    int multiplier = randomNumb > 0.5f ? 1 : -1;
+    float randomNumb = m_randomNeg(m_randomizer);
+    float multiplier = randomNumb > 0.5f ? 1 : -1;
     random *= multiplier; 
   }
 

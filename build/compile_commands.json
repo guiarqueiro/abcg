@@ -113,5 +113,10 @@
   "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
   "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\randomizer.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp",
   "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp"
+},
+{
+  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\starlayers.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp",
+  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp"
 }
 ]

@@ -7,7 +7,8 @@ add_executable(${PROJECT_NAME}
     playership.cpp     
     alienship.cpp 
     base_ship.cpp
-    randomizer.cpp 
+    randomizer.cpp
+    starlayers.cpp
 )
 
 enable_abcg(${PROJECT_NAME})

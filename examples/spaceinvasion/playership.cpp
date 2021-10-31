@@ -13,7 +13,6 @@ void PlayerShip::initializeGL(GLuint program) {
 
   m_hpBase = 5;
   m_currentLifePoints = m_hpBase;
-  m_velocity = glm::vec2(0);
   m_translation = glm::vec2(0, -0.70f);
   
 

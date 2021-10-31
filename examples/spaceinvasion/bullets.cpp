@@ -45,7 +45,7 @@ void Bullets::paintGL() {
   glUseProgram(m_program);
 
   glBindVertexArray(m_vao);
-  glUniform4f(m_colorLoc, 1, 1, 1, 1);
+  glUniform4f(m_colorLoc, 1, 1, 0, 1);
   glUniform1f(m_scaleLoc, m_scale);
 
   for (auto &bullet : m_bullets) {
