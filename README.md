@@ -1,9 +1,8 @@
 Entrega 1 - Space Invasion
-Space Invasion
+====== 
 Inspirado no jogo clássico Space Invaders, o Space Invasion é um jogo 2D em que você controla uma nave e precisa derrotar os cinco inimigos da tela para vencer. Caso seja atingido pelos inimigos, sua vida pode se acabar e fim de jogo!
 
-Controles:
-----
+### Controles:
 Os controles são feitos por meio do movimento do mouse para mover sua nave, e o click esquerdo para efetuar o disparo.
 
 ----
@@ -16,6 +15,7 @@ URL: https://guiarqueiro.github.io/abcg/public/index.html
 
 ### Creditos
 Guilherme Beo Arqueiro - 11102313
+
 Leonardo Vitturi Ribeiro - 11201722342
 
 
