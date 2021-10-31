@@ -12,7 +12,7 @@ class PlayerShip : public BaseShip {
   void paintGL(const GameData &gameData) override;
   void terminateGL() override;
   void update(float deltaTime);
-  void receiveDamage() override;
+  void takeDamage() override;
 
   float m_lastMousePosition{0};
 

@@ -111,8 +111,8 @@ void AlienShip::updatePosition(float deltaTime) {
 
 void AlienShip::updateShooting() {
   if (m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
-    std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.0f};
-    if (Randomizer::getRndNum(0.0f, 1.0f, false) > 0.90f) {
+    std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.1f};
+    if (Randomizer::getRndNum(0.0f, 1.1f, false) > 0.90f) {
       m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
     } else {
       m_bulletCoolDownTimer.restart();
@@ -121,4 +121,4 @@ void AlienShip::updateShooting() {
   }
 }
 
-void AlienShip::receiveDamage() { m_currentLifePoints--; }
+void AlienShip::takeDamage() { m_currentLifePoints--; }

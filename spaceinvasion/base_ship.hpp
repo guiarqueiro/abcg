@@ -15,7 +15,7 @@ class BaseShip {
  public:
   virtual void paintGL(const GameData &gameData) = 0;
   virtual void terminateGL() = 0;
-  virtual void receiveDamage() = 0;
+  virtual void takeDamage() = 0;
   void setColor();
 
  protected:

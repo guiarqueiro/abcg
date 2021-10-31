@@ -38,8 +38,8 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   PlayerShip m_player;
   //HpBar m_hpbar;
 
-  void verifyShot();
-  void verifyState();
+  void checkShot();
+  void checkState();
 
   void restart();
   void update();

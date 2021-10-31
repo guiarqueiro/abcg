@@ -90,7 +90,7 @@ void PlayerShip::update(float deltaTime) {
   }
 }
 
-void PlayerShip::receiveDamage() { m_currentLifePoints--; }
+void PlayerShip::takeDamage() { m_currentLifePoints--; }
 
 bool PlayerShip::reachMouse() {
   float interval = glm::abs(m_lastMousePosition - m_translation.x);

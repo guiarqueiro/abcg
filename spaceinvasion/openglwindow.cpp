@@ -91,8 +91,8 @@ void OpenGLWindow::update() {
 
   if (m_gameData.m_state == State::Playing) {
     m_aliens.remove_if([](const AlienShip &a) { return a.m_currentLifePoints == 0; });
-    verifyState();
-    verifyShot();
+    checkState();
+    checkShot();
   }
 }
 
@@ -154,7 +154,7 @@ void OpenGLWindow::terminateGL() {
   
 }
 
-void OpenGLWindow::verifyShot() {
+void OpenGLWindow::checkShot() {
   std::list<BaseShip *> ships = {&m_player};
   for (auto &enemy : m_aliens) ships.push_back(&enemy);
 
@@ -165,14 +165,14 @@ void OpenGLWindow::verifyShot() {
       if (distance < (m_bullets.m_scale + ship->m_scale) * 0.85f &&
           bullet.m_typeData.m_type != ship->m_typeData.m_type &&
           !bullet.m_dead) {
-        ship->receiveDamage();
+        ship->takeDamage();
         bullet.m_dead = true;
       }
     }
   }
 }
 
-void OpenGLWindow::verifyState() {
+void OpenGLWindow::checkState() {
   if (m_player.m_currentLifePoints == 0) {
     m_gameData.m_state = State::GameOver;
     m_restartWaitTimer.restart();
