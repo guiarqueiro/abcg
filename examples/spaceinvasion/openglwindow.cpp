@@ -160,14 +160,14 @@ void OpenGLWindow::checkShot() {
   for (auto &enemy : m_aliens) ships.push_back(&enemy);
 
   for (auto &bullet : m_bullets.m_bullets) {
-    if (bullet.m_dead) continue;
+    if (bullet.m_lifeState) continue;
     for (auto &ship : ships) {
       auto distance{glm::distance(bullet.m_translation, ship->m_translation)};
       if (distance < (m_bullets.m_scale + ship->m_scale) * 0.85f &&
           bullet.m_typeData.m_type != ship->m_typeData.m_type &&
-          !bullet.m_dead) {
+          !bullet.m_lifeState) {
         ship->takeDamage();
-        bullet.m_dead = true;
+        bullet.m_lifeState = true;
       }
     }
   }

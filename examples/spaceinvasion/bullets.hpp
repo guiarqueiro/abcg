@@ -31,7 +31,7 @@ class Bullets {
   GLuint m_vbo{};
 
   struct Bullet {
-    bool m_dead{false};
+    bool m_lifeState{false};
     glm::vec2 m_translation{glm::vec2(0)};
     glm::vec2 m_velocity{glm::vec2(0)};
     TypeData m_typeData{};

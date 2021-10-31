@@ -73,12 +73,12 @@ void Bullets::update(BaseShip &ship, const GameData &gameData,float deltaTime) {
 
   for (auto &bullet : m_bullets) {
     bullet.m_translation += bullet.m_velocity * deltaTime;
-    if (bullet.m_translation.x < -1.1f) bullet.m_dead = true;
-    if (bullet.m_translation.x > +1.1f) bullet.m_dead = true;
-    if (bullet.m_translation.y < -1.1f) bullet.m_dead = true;
-    if (bullet.m_translation.y > +1.1f) bullet.m_dead = true;
+    if (bullet.m_translation.x < -1.1f) bullet.m_lifeState = true;
+    if (bullet.m_translation.x > +1.1f) bullet.m_lifeState = true;
+    if (bullet.m_translation.y < -1.1f) bullet.m_lifeState = true;
+    if (bullet.m_translation.y > +1.1f) bullet.m_lifeState = true;
   }
-  m_bullets.remove_if([](const Bullet &p) { return p.m_dead; });
+  m_bullets.remove_if([](const Bullet &p) { return p.m_lifeState; });
 }
 
 
@@ -87,7 +87,7 @@ void Bullets::createBullet(BaseShip &ship) {
 
   auto bulletSpeed{0.6f};
 
-  Bullet bullet{.m_dead = false,
+  Bullet bullet{.m_lifeState = false,
                 .m_translation = ship.m_translation,
                 .m_velocity = ship.m_forward * bulletSpeed,
                 .m_typeData = ship.m_typeData};
