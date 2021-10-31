@@ -5,4 +5,4 @@ project(abcg)
 include(cmake/Common.cmake)
 
 add_subdirectory(abcg)
-add_subdirectory(spaceinvasion)
+add_subdirectory(examples)

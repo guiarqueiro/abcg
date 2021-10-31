@@ -17,6 +17,8 @@ C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/abcg/external/glm/CMakeFiles/re
 C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/abcg/external/glm/CMakeFiles/edit_cache.dir
 C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/abcg/external/gsl/CMakeFiles/rebuild_cache.dir
 C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/abcg/external/gsl/CMakeFiles/edit_cache.dir
-C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/spaceinvasion/CMakeFiles/edit_cache.dir
-C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/spaceinvasion/CMakeFiles/rebuild_cache.dir
-C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/spaceinvasion/CMakeFiles/SpaceInvasion.dir
+C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/examples/CMakeFiles/rebuild_cache.dir
+C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/examples/CMakeFiles/edit_cache.dir
+C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/examples/spaceinvasion/CMakeFiles/edit_cache.dir
+C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/examples/spaceinvasion/CMakeFiles/rebuild_cache.dir
+C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build/examples/spaceinvasion/CMakeFiles/SpaceInvasion.dir
