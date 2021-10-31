@@ -3,7 +3,7 @@
 
 #include "abcg.hpp"
 #include "actiondata.hpp"
-#include "base_constants.hpp"
+#include "defaultvalues.hpp"
 #include "gamedata.hpp"
 #include "typedata.hpp"
 
@@ -34,7 +34,7 @@ class BaseShip {
 
   glm::vec4 m_color{1};
   float m_scale{0.150f};
-  int m_baseLifePoints{};
+  int m_hpBase{};
   int m_currentLifePoints{};
   glm::vec2 m_translation{glm::vec2(0)};
   glm::vec2 m_velocity{glm::vec2(0)};

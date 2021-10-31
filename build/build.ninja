@@ -513,22 +513,15 @@ build spaceinvasion/CMakeFiles/SpaceInvasion.dir/bullets.cpp.obj: CXX_COMPILER__
   OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
   OBJECT_FILE_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
 
-build spaceinvasion/CMakeFiles/SpaceInvasion.dir/ship.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/ship.cpp || cmake_object_order_depends_target_SpaceInvasion
-  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\ship.cpp.obj.d
+build spaceinvasion/CMakeFiles/SpaceInvasion.dir/playership.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/playership.cpp || cmake_object_order_depends_target_SpaceInvasion
+  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\playership.cpp.obj.d
   FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
   INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
   OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
   OBJECT_FILE_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
 
-build spaceinvasion/CMakeFiles/SpaceInvasion.dir/enemy_ship.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/enemy_ship.cpp || cmake_object_order_depends_target_SpaceInvasion
-  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\enemy_ship.cpp.obj.d
-  FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
-  INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
-  OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
-  OBJECT_FILE_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
-
-build spaceinvasion/CMakeFiles/SpaceInvasion.dir/util.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/util.cpp || cmake_object_order_depends_target_SpaceInvasion
-  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\util.cpp.obj.d
+build spaceinvasion/CMakeFiles/SpaceInvasion.dir/alienship.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/alienship.cpp || cmake_object_order_depends_target_SpaceInvasion
+  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\alienship.cpp.obj.d
   FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
   INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
   OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
@@ -536,6 +529,13 @@ build spaceinvasion/CMakeFiles/SpaceInvasion.dir/util.cpp.obj: CXX_COMPILER__Spa
 
 build spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/base_ship.cpp || cmake_object_order_depends_target_SpaceInvasion
   DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\base_ship.cpp.obj.d
+  FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
+  INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
+  OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
+  OBJECT_FILE_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
+
+build spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj: CXX_COMPILER__SpaceInvasion_Debug C$:/Users/GUILHERME/Documents/CG_UFABC/abcg/spaceinvasion/randomizer.cpp || cmake_object_order_depends_target_SpaceInvasion
+  DEP_FILE = spaceinvasion\CMakeFiles\SpaceInvasion.dir\randomizer.cpp.obj.d
   FLAGS = -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a
   INCLUDES = -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external
   OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir
@@ -549,7 +549,7 @@ build spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj: CXX_COMPILER
 #############################################
 # Link the executable bin\SpaceInvasion.exe
 
-build bin/SpaceInvasion.exe: CXX_EXECUTABLE_LINKER__SpaceInvasion_Debug spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/bullets.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/ship.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/enemy_ship.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/util.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
+build bin/SpaceInvasion.exe: CXX_EXECUTABLE_LINKER__SpaceInvasion_Debug spaceinvasion/CMakeFiles/SpaceInvasion.dir/main.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/openglwindow.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/bullets.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/playership.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/alienship.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/base_ship.cpp.obj spaceinvasion/CMakeFiles/SpaceInvasion.dir/randomizer.cpp.obj | abcg/libabcg.a C$:/msys64/mingw64/lib/libglew32.dll.a abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a C$:/msys64/mingw64/lib/libSDL2main.a C$:/msys64/mingw64/lib/libSDL2.dll.a C$:/msys64/mingw64/lib/libSDL2_image.dll.a || abcg/external/fmt/libfmt.a abcg/external/imgui/libimgui.a abcg/libabcg.a
   FLAGS = -g -flto -fno-fat-lto-objects
   LINK_LIBRARIES = abcg/libabcg.a  -lmingw32  -lSDL2main  -lSDL2  -lglew32  -lopengl32  C:/msys64/mingw64/lib/libglew32.dll.a  -lopengl32  -lglu32  abcg/external/fmt/libfmt.a  abcg/external/imgui/libimgui.a  -lmingw32  -mwindows  C:/msys64/mingw64/lib/libSDL2main.a  C:/msys64/mingw64/lib/libSDL2.dll.a  C:/msys64/mingw64/lib/libSDL2_image.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = spaceinvasion\CMakeFiles\SpaceInvasion.dir

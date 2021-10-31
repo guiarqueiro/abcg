@@ -1,6 +1,6 @@
-#include "util.hpp"
+#include "randomizer.hpp"
 
-float Util::getRandomNumber(float start, float end, bool isNegativeAcceptable) {
+float Randomizer::getRandomNumber(float start, float end, bool isNegativeAcceptable) {
   std::uniform_real_distribution<float> m_randomNumber{start, end};
   std::default_random_engine m_randomEngine;
   

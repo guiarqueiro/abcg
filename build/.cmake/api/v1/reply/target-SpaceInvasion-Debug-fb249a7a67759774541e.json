@@ -309,25 +309,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "spaceinvasion/ship.cpp",
+			"path" : "spaceinvasion/playership.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "spaceinvasion/enemy_ship.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "spaceinvasion/util.cpp",
+			"path" : "spaceinvasion/alienship.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "spaceinvasion/base_ship.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "spaceinvasion/randomizer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

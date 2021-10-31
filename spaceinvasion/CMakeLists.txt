@@ -4,10 +4,10 @@ add_executable(${PROJECT_NAME}
     main.cpp 
     openglwindow.cpp 
     bullets.cpp 
-    ship.cpp     
-    enemy_ship.cpp 
-    util.cpp 
+    playership.cpp     
+    alienship.cpp 
     base_ship.cpp
+    randomizer.cpp 
 )
 
 enable_abcg(${PROJECT_NAME})

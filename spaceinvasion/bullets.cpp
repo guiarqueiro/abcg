@@ -73,22 +73,14 @@ void Bullets::update(BaseShip &ship, const GameData &gameData,
 
   for (auto &bullet : m_bullets) {
     bullet.m_translation += bullet.m_velocity * deltaTime;
-    verifyBulletOffScreen(bullet);
+    if (bullet.m_translation.x < -1.1f) bullet.m_dead = true;
+    if (bullet.m_translation.x > +1.1f) bullet.m_dead = true;
+    if (bullet.m_translation.y < -1.1f) bullet.m_dead = true;
+    if (bullet.m_translation.y > +1.1f) bullet.m_dead = true;
   }
-
-  removeDeadBullets();
-}
-
-void Bullets::verifyBulletOffScreen(Bullet &bullet) {
-  if (bullet.m_translation.x < -1.1f) bullet.m_dead = true;
-  if (bullet.m_translation.x > +1.1f) bullet.m_dead = true;
-  if (bullet.m_translation.y < -1.1f) bullet.m_dead = true;
-  if (bullet.m_translation.y > +1.1f) bullet.m_dead = true;
-}
-
-void Bullets::removeDeadBullets() {
   m_bullets.remove_if([](const Bullet &p) { return p.m_dead; });
 }
+
 
 void Bullets::createBullet(BaseShip &ship) {
   ship.m_bulletCoolDownTimer.restart();

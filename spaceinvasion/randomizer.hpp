@@ -4,7 +4,7 @@
 #include <random>
 #include "abcg.hpp"
 
-class Util {
+class Randomizer {
   public:
     static float getRandomNumber(float start, float end, bool isNegativeAcceptable);    
     

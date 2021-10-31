@@ -1,9 +1,9 @@
-#include "ship.hpp"
+#include "playership.hpp"
 
 #include <glm/gtx/fast_trigonometry.hpp>
 #include <glm/gtx/rotate_vector.hpp>
 
-void Ship::initializeGL(GLuint program) {
+void PlayerShip::initializeGL(GLuint program) {
   terminateGL();
 
   m_program = program;
@@ -11,19 +11,25 @@ void Ship::initializeGL(GLuint program) {
   m_scaleLoc = glGetUniformLocation(m_program, "scale");
   m_translationLoc = glGetUniformLocation(m_program, "translation");
 
-  m_baseLifePoints = LIFE_POINTS;          // m_shipLife = healthPoints
-  m_currentLifePoints = m_baseLifePoints;  // m_currentHp = m_shipLife;
+  m_hpBase = 5;
+  m_currentLifePoints = m_hpBase;
   m_translation =
-      glm::vec2(0, VERTICAL_POSITION);  // m_translation = glm::vec2(0, yPOS);
+      glm::vec2(0, -0.8f);
   m_velocity = glm::vec2(0);
 
-  std::array<glm::vec2, 10> positions = BODY_POINTS;
+  std::array<glm::vec2, 10> positions{
+      glm::vec2{-02.5f, +02.5f} /*0*/, glm::vec2{-15.5f, -02.5f} /*1*/,
+      glm::vec2{-15.5f, -12.5f} /*2*/, glm::vec2{-09.5f, -11.0f} /*3*/,
+      glm::vec2{-03.5f, -12.5f} /*4*/, glm::vec2{+03.5f, -12.5f} /*5*/,
+      glm::vec2{+09.5f, -11.5f} /*6*/, glm::vec2{+15.5f, -12.5f} /*7*/,
+      glm::vec2{+15.5f, -02.5f} /*8*/, glm::vec2{+02.5f, +02.5f}} /*9*/;
 
   for (auto &position : positions) {
-    position /= glm::vec2{NORMALIZE_FACTOR, NORMALIZE_FACTOR};
+    position /= glm::vec2{15.5f, 15.5f};
   }
 
-  std::array indices = BODY_POINTS_INDICES;
+  std::array<int, 24> indices{
+      0, 1, 3, 1, 2, 3, 0, 3, 4, 0, 4, 5, 9, 0, 5, 9, 5, 6, 9, 6, 8, 8, 6, 7};
 
   glGenBuffers(1, &m_vbo);
   glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
@@ -53,53 +59,40 @@ void Ship::initializeGL(GLuint program) {
   glBindVertexArray(0);
 }
 
-void Ship::paintGL(const GameData &gameData) {
+void PlayerShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
 
   glUseProgram(m_program);
   glBindVertexArray(m_vao);
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
-
-  BaseShip::setColor();
-
+  m_color = DefaultValues::LBLUE_COLOR;
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 10 * 3, GL_UNSIGNED_INT, nullptr);
   glBindVertexArray(0);
   glUseProgram(0);
 }
 
-void Ship::terminateGL() {
+void PlayerShip::terminateGL() {
   glDeleteBuffers(1, &m_vbo);
   glDeleteBuffers(1, &m_ebo);
   glDeleteVertexArrays(1, &m_vao);
 }
 
-void Ship::update(float deltaTime) {
-  if (m_actionData.m_input[static_cast<size_t>(Action::Left)] &&
-      m_translation.x > -1 + m_scale) {
-    m_translation -= glm::vec2(1, 0) * deltaTime;
-  }
-
+void PlayerShip::update(float deltaTime) {
   if (m_actionData.m_input[static_cast<size_t>(Action::MouseLeft)] &&
-      m_translation.x > -1 + m_scale && !isWithinMouseInterval()) {
+      m_translation.x > -1 + m_scale && !reachMouse()) {
     m_translation -= glm::vec2(1, 0) * deltaTime;
   }
-
-  if (m_actionData.m_input[static_cast<size_t>(Action::Right)] &&
-      m_translation.x < 1 - m_scale) {
-    m_translation += glm::vec2(1, 0) * deltaTime;
-  }
-
   if (m_actionData.m_input[static_cast<size_t>(Action::MouseRight)] &&
-      m_translation.x < 1 - m_scale && !isWithinMouseInterval()) {
+      m_translation.x < 1 - m_scale && !reachMouse()) {
     m_translation += glm::vec2(1, 0) * deltaTime;
   }
 }
 
-void Ship::receiveDamage() { m_currentLifePoints--; }
+void PlayerShip::receiveDamage() { m_currentLifePoints--; }
 
-bool Ship::isWithinMouseInterval() {
+bool PlayerShip::reachMouse() {
   float interval = glm::abs(m_lastMousePosition - m_translation.x);
-  return interval < m_mouseMovementDelta;
+  return interval < 0.01f;
 }

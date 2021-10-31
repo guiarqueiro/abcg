@@ -1,9 +1,9 @@
-#include "enemy_ship.hpp"
+#include "alienship.hpp"
 
 #include <glm/gtx/fast_trigonometry.hpp>
 #include <glm/gtx/rotate_vector.hpp>
 
-void EnemyShip::initializeGL(GLuint program, float verticalPosition) {
+void AlienShip::initializeGL(GLuint program, float verticalPosition) {
   terminateGL();
 
   m_program = program;
@@ -15,25 +15,29 @@ void EnemyShip::initializeGL(GLuint program, float verticalPosition) {
   m_scale = 0.10f;
 
   float horizontalPosition =
-      Util::getRandomNumber(BaseConstants::SCREEN_LEFT_LIMIT + m_scale,
-                            BaseConstants::SCREEN_RIGHT_LIMIT - m_scale, true);
+      Randomizer::getRandomNumber(DefaultValues::SCREEN_LEFT_LIMIT + m_scale,
+                            DefaultValues::SCREEN_RIGHT_LIMIT - m_scale, true);
   m_translation = glm::vec2{horizontalPosition, verticalPosition};
 
   float horizontalVelocity =
-      Util::getRandomNumber(MIN_VELOCITY, MAX_VELOCITY, true);
+      Randomizer::getRandomNumber(0.8f, 1.2f/*1.0f*/, true);
   m_velocity = glm::vec2{horizontalVelocity, 0.0f};
 
-  m_baseLifePoints = LIFE_POINTS;
-  m_currentLifePoints = m_baseLifePoints;
+  m_hpBase = 3;
+  m_currentLifePoints = m_hpBase;
   m_typeData.m_type = SHIP_TYPE;
 
-  std::array<glm::vec2, 8> positions = BODY_POINTS;
+  std::array<glm::vec2, 8> positions{
+      glm::vec2{-10.0f, +03.0f} /*0*/, glm::vec2{-10.0f, -03.0f} /*1*/,
+      glm::vec2{+0.0f, -03.0f} /*2*/,  glm::vec2{+10.0f, -03.0f} /*3*/,
+      glm::vec2{+10.0f, +03.0f} /*4*/, glm::vec2{+05.0f, +00.0f} /*5*/,
+      glm::vec2{+00.0f, +03.0f} /*6*/, glm::vec2{-05.0f, +00.0f} /*7*/};
 
   for (auto &position : positions) {
-    position /= glm::vec2{-NORMALIZE_FACTOR, -NORMALIZE_FACTOR};
+    position /= glm::vec2{-10.0f, -10.0f};
   }
 
-  std::array indices = BODY_POINTS_INDICES;
+  std::array<int, 18> indices{0, 1, 7, 1, 7, 2, 7, 6, 2, 2, 6, 5, 2, 5, 3, 3, 5, 4};
 
   glGenBuffers(1, &m_vbo);
   glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
@@ -62,7 +66,7 @@ void EnemyShip::initializeGL(GLuint program, float verticalPosition) {
   glBindVertexArray(0);
 }
 
-void EnemyShip::paintGL(const GameData &gameData) {
+void AlienShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
 
   BaseShip::setColor();
@@ -82,19 +86,19 @@ void EnemyShip::paintGL(const GameData &gameData) {
   glUseProgram(0);
 }
 
-void EnemyShip::terminateGL() {
+void AlienShip::terminateGL() {
   glDeleteBuffers(1, &m_vbo);
   glDeleteBuffers(1, &m_ebo);
   glDeleteVertexArrays(1, &m_vao);
 }
 
-void EnemyShip::update(float deltaTime) {
+void AlienShip::update(float deltaTime) {
   updatePosition(deltaTime);
   updateShooting();
 }
 
-void EnemyShip::updatePosition(float deltaTime) {
-  bool isInInvertRegion = 1 - glm::abs(m_translation.x) < m_invertDelta;
+void AlienShip::updatePosition(float deltaTime) {
+  bool isInInvertRegion = 1 - glm::abs(m_translation.x) < 0.10f;
 
   if (!m_inInvertRegionFlag && isInInvertRegion) {
     m_velocity *= -1;
@@ -106,10 +110,10 @@ void EnemyShip::updatePosition(float deltaTime) {
   m_translation += m_velocity * deltaTime;
 }
 
-void EnemyShip::updateShooting() {
+void AlienShip::updateShooting() {
   if (m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
     std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.0f};
-    if (Util::getRandomNumber(0.0f, 1.0f, false) > 0.90f) {
+    if (Randomizer::getRandomNumber(0.0f, 1.0f, false) > 0.90f) {
       m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
     } else {
       m_bulletCoolDownTimer.restart();
@@ -118,4 +122,4 @@ void EnemyShip::updateShooting() {
   }
 }
 
-void EnemyShip::receiveDamage() { m_currentLifePoints--; }
+void AlienShip::receiveDamage() { m_currentLifePoints--; }

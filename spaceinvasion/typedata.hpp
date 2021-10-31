@@ -3,7 +3,7 @@
 
 #include <bitset>
 
-enum class Type { Enemy, Player };
+enum class Type { Alien, Player };
 
 struct TypeData {
   Type m_type{Type::Player};

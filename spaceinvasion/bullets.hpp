@@ -6,7 +6,7 @@
 #include "abcg.hpp"
 #include "base_ship.hpp"
 #include "gamedata.hpp"
-#include "ship.hpp"
+#include "playership.hpp"
 #include "typedata.hpp"
 
 class OpenGLWindow;
@@ -41,8 +41,6 @@ class Bullets {
 
   std::list<Bullet> m_bullets;
 
-  void verifyBulletOffScreen(Bullet &bullet);
-  void removeDeadBullets();
   void createBullet(BaseShip &ship);
 };
 
