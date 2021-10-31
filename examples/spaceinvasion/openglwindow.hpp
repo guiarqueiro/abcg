@@ -29,7 +29,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   int m_viewportWidth{};
   
   GLuint m_objectsProgram{};
-  int m_lastmousepos{0};
+  //int m_lastmousepos{0};
 
   GameData m_gameData;
   Bullets m_bullets;

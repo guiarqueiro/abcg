@@ -176,9 +176,11 @@ void OpenGLWindow::checkShot() {
 void OpenGLWindow::checkState() {
   if (m_player.m_currentLifePoints == 0) {
     m_gameData.m_state = State::GameOver;
-    m_restartWaitTimer.restart();
+    m_bullets.terminateGL();
+    m_restartWaitTimer.restart(); 
   } else if (m_aliens.empty()) {
     m_gameData.m_state = State::Win;
+    m_bullets.terminateGL();
     m_restartWaitTimer.restart();
   }
 }

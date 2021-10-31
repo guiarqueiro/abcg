@@ -15,7 +15,7 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
   m_scale = 0.10f;
 
   float horizontalPosition =
-      Randomizer::getRndNum(DefaultValues::SCREEN_LEFT_LIMIT + m_scale, DefaultValues::SCREEN_RIGHT_LIMIT - m_scale, true);
+      Randomizer::getRndNum(DefaultValues::limitLeft + m_scale, DefaultValues::limitRight - m_scale, true);
   m_translation = glm::vec2{horizontalPosition, verticalPosition};
 
   float horizontalVelocity =

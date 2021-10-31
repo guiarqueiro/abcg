@@ -25,7 +25,7 @@ class AlienShip : public BaseShip {
 
   void updatePosition(float deltaTime);
   void updateShooting();
-  float getRandomNumber(float start, float end, bool isNegativeAcceptable);
+  float getRandomNumber(float start, float end, bool requiresNegative);
 };
 
 #endif

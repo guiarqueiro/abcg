@@ -67,7 +67,7 @@ void PlayerShip::paintGL(const GameData &gameData) {
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
   
-  m_color = {0.153f, 0.723f, 0.102f, 1.0f};
+  m_color = DefaultValues::lightBlue;
 
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 10 * 3, GL_UNSIGNED_INT, nullptr);
