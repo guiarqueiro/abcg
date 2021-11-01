@@ -3,10 +3,10 @@
 
 #include "abcg.hpp"
 #include "defaultvalues.hpp"
-#include "base_ship.hpp"
+#include "mothership.hpp"
 #include "gamedata.hpp"
 
-class PlayerShip : public BaseShip {
+class PlayerShip : public MotherShip {
  public:
   void initializeGL(GLuint program);
   void paintGL(const GameData &gameData) override;

@@ -68,7 +68,7 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
 void AlienShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
 
-  BaseShip::lifeStatus();
+  MotherShip::lifeStatus();
 
   glUseProgram(m_program);
 
@@ -94,6 +94,17 @@ void AlienShip::terminateGL() {
 void AlienShip::update(float deltaTime) {
   updatePosition(deltaTime);
   updateShooting();
+}
+
+void MotherShip::lifeStatus() {
+  float lifePercentage = 1.0f * m_currentLifePoints / m_hpBase;
+  if (lifePercentage > 0.75f) {
+    m_color = DefaultValues::red;
+  } else if (lifePercentage > 0.35f) {
+    m_color = DefaultValues::red_darker;
+  } else {
+    m_color = DefaultValues::red_dark;
+  }
 }
 
 void AlienShip::updatePosition(float deltaTime) {

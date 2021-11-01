@@ -5,11 +5,11 @@
 
 #include "abcg.hpp"
 #include "defaultvalues.hpp"
-#include "base_ship.hpp"
+#include "mothership.hpp"
 #include "gamedata.hpp"
 #include "randomizer.hpp"
 
-class AlienShip : public BaseShip {
+class AlienShip : public MotherShip {
   const Type objType = Type::Alien;
 
  public:
@@ -18,6 +18,7 @@ class AlienShip : public BaseShip {
   void terminateGL() override;
   void takeDamage() override;
   void update(float deltaTime);
+  void lifeStatus();
 
  private:
   abcg::ElapsedTimer m_bulletCoolDownTimer;

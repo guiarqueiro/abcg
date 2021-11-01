@@ -163,7 +163,7 @@ void OpenGLWindow::terminateGL() {
 }
 
 void OpenGLWindow::checkShot() {
-  std::list<BaseShip *> ships = {&m_player};
+  std::list<MotherShip *> ships = {&m_player};
   for (auto &enemy : m_aliens) ships.push_back(&enemy);
 
   for (auto &bullet : m_bullets.m_bullets) {

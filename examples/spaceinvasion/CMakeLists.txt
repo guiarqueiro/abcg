@@ -6,7 +6,6 @@ add_executable(${PROJECT_NAME}
     bullets.cpp 
     playership.cpp     
     alienship.cpp 
-    base_ship.cpp
     randomizer.cpp
     starlayers.cpp
 )

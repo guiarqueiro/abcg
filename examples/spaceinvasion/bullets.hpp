@@ -4,7 +4,7 @@
 #include <list>
 
 #include "abcg.hpp"
-#include "base_ship.hpp"
+#include "mothership.hpp"
 #include "gamedata.hpp"
 #include "playership.hpp"
 #include "typedata.hpp"
@@ -16,7 +16,7 @@ class Bullets {
   void initializeGL(GLuint program);
   void paintGL();
   void terminateGL();
-  void update(BaseShip &ship, const GameData &gameData, float deltaTime);
+  void update(MotherShip &ship, const GameData &gameData, float deltaTime);
 
  private:
   friend OpenGLWindow;
@@ -41,7 +41,7 @@ class Bullets {
 
   std::list<Bullet> m_bullets;
 
-  void createBullet(BaseShip &ship);
+  void createBullet(MotherShip &ship);
 };
 
 #endif
