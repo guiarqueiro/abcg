@@ -3,7 +3,7 @@
 
 #include <bitset>
 
-enum class Action { Right, Left, Fire, MouseLeft, MouseRight };
+enum class Action { Fire, MouseLeft, MouseRight };
 
 struct ActionData {
   std::bitset<5> m_input;

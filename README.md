@@ -19,6 +19,14 @@ Guilherme Beo Arqueiro - 11102313
 Leonardo Vitturi Ribeiro - 11201722342
 
 
+Considerações
+===
+Compilação do WebAssembly com a versão 2.0.31 do Emscripten não renderiza a nave do player de forma apropriada. Ao fazer o build pelo MinGW, o executável gerado no Windows/Ubuntu exibe a nave como esperado.
+
+
+
+
+
 
 
 

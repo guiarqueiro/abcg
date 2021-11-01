@@ -72,6 +72,7 @@ void Bullets::update(BaseShip &ship, const GameData &gameData,float deltaTime) {
   }
 
   for (auto &bullet : m_bullets) {
+    // nossa nave não se mexe bullet.m_translation -= ship.m_velocity * deltaTime;
     bullet.m_translation += bullet.m_velocity * deltaTime;
     if (bullet.m_translation.x < -1.1f) bullet.m_lifeState = true;
     if (bullet.m_translation.x > +1.1f) bullet.m_lifeState = true;

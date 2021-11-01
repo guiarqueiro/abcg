@@ -1,6 +1,6 @@
 #include "base_ship.hpp"
 
-void BaseShip::setColor() {
+void BaseShip::lifeStatus() {
   float lifePercentage = 1.0f * m_currentLifePoints / m_hpBase;
 
   if (lifePercentage > 0.75f) {

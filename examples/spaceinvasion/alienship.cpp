@@ -68,7 +68,7 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
 void AlienShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
 
-  BaseShip::setColor();
+  BaseShip::lifeStatus();
 
   glUseProgram(m_program);
 
@@ -112,11 +112,12 @@ void AlienShip::updatePosition(float deltaTime) {
 void AlienShip::updateShooting() {
   if (m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
     std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.1f};
-    if (Randomizer::getRndNum(0.0f, 1.1f, false) > 0.90f) {
-      m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
+    if (Randomizer::getRndNum(0.0f, 1.1f, false) <= 0.90f) {
+		m_bulletCoolDownTimer.restart();
+		m_actionData.m_input.reset(static_cast<size_t>(Action::Fire));
     } else {
-      m_bulletCoolDownTimer.restart();
-      m_actionData.m_input.reset(static_cast<size_t>(Action::Fire));
+		m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
+      
     }
   }
 }

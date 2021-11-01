@@ -15,7 +15,7 @@ class BaseShip {
   virtual void paintGL(const GameData &gameData) = 0;
   virtual void terminateGL() = 0;
   virtual void takeDamage() = 0;
-  void setColor();
+  void lifeStatus();
 
  protected:
   friend Bullets;
@@ -33,7 +33,7 @@ class BaseShip {
 
   ActionData m_actionData;
   TypeData m_typeData;
-
+  abcg::ElapsedTimer m_bulletCoolDownTimer;
   glm::vec4 m_color{1};
   float m_scale{0.150f};
   int m_hpBase{};
@@ -42,7 +42,7 @@ class BaseShip {
   glm::vec2 m_translation{glm::vec2(0)};
   glm::vec2 m_velocity{glm::vec2(0)};
 
-  abcg::ElapsedTimer m_bulletCoolDownTimer;
+  
 
 };
 
