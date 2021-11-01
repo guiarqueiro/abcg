@@ -5,6 +5,7 @@ Inspirado no jogo clássico Space Invaders, o Space Invasion é um jogo 2D em qu
 ### Controles:
 Os controles são feitos por meio do movimento do mouse para mover sua nave, e o click esquerdo para efetuar o disparo.
 
+![Imagem do Jogo](https://github.com/guiarqueiro/abcg/blob/main/screenshot.png)
 ----
 
 O código foi desenvolvido utilizando a biblioteca ABCg, com OpenGL, com elementos da tela principal e janelas de fim de jogo em ImGUI.
