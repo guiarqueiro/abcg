@@ -11,9 +11,6 @@
 #include "playership.hpp"
 #include "starlayers.hpp"
 
-const int AlienQtt = 5;
-const float AlienDistance = 0.15f;
-
 
 class OpenGLWindow : public abcg::OpenGLWindow {
  protected:
@@ -39,9 +36,6 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   std::list<AlienShip> m_aliens;
   StarLayers m_starLayers;
 
-  //HpBar m_hpbar;
-
- 
   void restart();
   void update();
   void checkShot();

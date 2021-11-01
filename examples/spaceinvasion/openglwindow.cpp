@@ -56,12 +56,13 @@ void OpenGLWindow::initializeGL() {
 }
 
 void OpenGLWindow::restart() {
+  float AlienDistance = 0.20f;
   m_gameData.m_state = State::Playing;
 
   m_starLayers.initializeGL(m_starsProgram, 25);
   m_player.initializeGL(m_objectsProgram);
   m_aliens.clear();
-
+  int AlienQtt = 5;
   m_aliens.resize(AlienQtt);
   m_bullets.initializeGL(m_objectsProgram);
   float verticalPosition = 0.90f;
@@ -150,15 +151,15 @@ void OpenGLWindow::resizeGL(int width, int height) {
 }
 
 void OpenGLWindow::terminateGL() {
-  glDeleteProgram(m_starsProgram);
+  abcg::glDeleteProgram(m_starsProgram);
   glDeleteProgram(m_objectsProgram);
   
   m_player.terminateGL();
   m_bullets.terminateGL();
-  m_starLayers.terminateGL();
   
   for (auto &enemy : m_aliens) enemy.terminateGL();
   
+  m_starLayers.terminateGL();
 }
 
 void OpenGLWindow::checkShot() {
@@ -182,11 +183,11 @@ void OpenGLWindow::checkShot() {
 void OpenGLWindow::checkState() {
   if (m_player.m_currentLifePoints == 0) {
     m_gameData.m_state = State::GameOver;
-    m_bullets.terminateGL();
+    //m_bullets.terminateGL();
     m_restartWaitTimer.restart(); 
   } else if (m_aliens.empty()) {
     m_gameData.m_state = State::Win;
-    m_bullets.terminateGL();
+    //m_bullets.terminateGL();
     m_restartWaitTimer.restart();
   }
 }

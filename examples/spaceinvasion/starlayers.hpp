@@ -33,7 +33,7 @@ class StarLayers {
     glm::vec2 m_translation{glm::vec2(0)};
   };
 
-  std::array<StarLayer, 3> m_starLayers;
+  std::array<StarLayer, 5> m_starLayers;
 
   std::default_random_engine m_randomEngine;
 };

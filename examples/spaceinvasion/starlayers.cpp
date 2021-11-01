@@ -6,8 +6,7 @@ void StarLayers::initializeGL(GLuint program, int quantity) {
   terminateGL();
 
   // Start pseudo-random number generator
-  m_randomEngine.seed(
-      std::chrono::steady_clock::now().time_since_epoch().count());
+  m_randomEngine.seed(std::chrono::steady_clock::now().time_since_epoch().count());
 
   m_program = program;
   m_pointSizeLoc = abcg::glGetUniformLocation(m_program, "pointSize");
