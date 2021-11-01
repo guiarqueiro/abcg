@@ -2,7 +2,6 @@
 #define SHIP_HPP_
 
 #include "abcg.hpp"
-#include "defaultvalues.hpp"
 #include "mothership.hpp"
 #include "gamedata.hpp"
 

@@ -90,7 +90,7 @@ void Bullets::createBullet(MotherShip &ship) {
 
   Bullet bullet{.m_lifeState = false,
                 .m_translation = ship.m_translation,
-                .m_velocity = ship.m_forward * bulletSpeed,
+                .m_velocity = ship.m_direction * bulletSpeed,
                 .m_typeData = ship.m_typeData};
 
   m_bullets.push_back(bullet);

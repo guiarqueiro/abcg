@@ -5,17 +5,16 @@
 
 void AlienShip::initializeGL(GLuint program, float verticalPosition) {
   terminateGL();
-
+  m_direction = glm::vec2(0.0f, -1.0f);
+  m_scale = 0.10f;
   m_program = program;
   m_colorLoc = glGetUniformLocation(m_program, "color");
   m_scaleLoc = glGetUniformLocation(m_program, "scale");
   m_translationLoc = glGetUniformLocation(m_program, "translation");
 
-  m_forward = glm::vec2(0.0f, -1.0f);
-  m_scale = 0.10f;
 
   float horizontalPosition =
-      Randomizer::getRndNum(DefaultValues::limitLeft + m_scale, DefaultValues::limitRight - m_scale, true);
+      Randomizer::getRndNum(-1.0f + m_scale, +1.0f - m_scale, true);
   m_translation = glm::vec2{horizontalPosition, verticalPosition};
 
   float horizontalVelocity =
@@ -67,22 +66,16 @@ void AlienShip::initializeGL(GLuint program, float verticalPosition) {
 
 void AlienShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
-
-  MotherShip::lifeStatus();
-
   glUseProgram(m_program);
-
   glBindVertexArray(m_vao);
-
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
-
+  MotherShip::lifeStatus();
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 6 * 3, GL_UNSIGNED_INT, nullptr);
-
   glBindVertexArray(0);
-
   glUseProgram(0);
+  
 }
 
 void AlienShip::terminateGL() {
@@ -92,22 +85,6 @@ void AlienShip::terminateGL() {
 }
 
 void AlienShip::update(float deltaTime) {
-  updatePosition(deltaTime);
-  updateShooting();
-}
-
-void MotherShip::lifeStatus() {
-  float lifePercentage = 1.0f * m_currentLifePoints / m_hpBase;
-  if (lifePercentage > 0.75f) {
-    m_color = DefaultValues::red;
-  } else if (lifePercentage > 0.35f) {
-    m_color = DefaultValues::red_darker;
-  } else {
-    m_color = DefaultValues::red_dark;
-  }
-}
-
-void AlienShip::updatePosition(float deltaTime) {
   bool isInInvertRegion = 1 - glm::abs(m_translation.x) < 0.10f;
 
   if (!m_inInvertRegionFlag && isInInvertRegion) {
@@ -118,9 +95,7 @@ void AlienShip::updatePosition(float deltaTime) {
   }
 
   m_translation += m_velocity * deltaTime;
-}
-
-void AlienShip::updateShooting() {
+  
   if (m_bulletCoolDownTimer.elapsed() > 250.0 / 1000.0) {
     std::uniform_real_distribution<float> m_randomShoot{0.0f, 1.1f};
     if (Randomizer::getRndNum(0.0f, 1.1f, false) <= 0.90f) {
@@ -128,9 +103,16 @@ void AlienShip::updateShooting() {
 		m_actionData.m_input.reset(static_cast<size_t>(Action::Fire));
     } else {
 		m_actionData.m_input.set(static_cast<size_t>(Action::Fire));
-      
     }
   }
 }
 
 void AlienShip::takeDamage() { m_currentLifePoints--; }
+
+void MotherShip::lifeStatus() {
+  float hp = 1.0f * m_currentLifePoints / m_hpBase;
+  if (hp > 0.75f) m_color = {1.0f, 0.0f, 0.0f, 1.00f};
+  else if (hp > 0.35f) m_color = {0.55f, 0.0f, 0.0f, 1.00f};
+  else m_color = {0.35, 0.121f, 0.153f, 1.00f};
+}
+

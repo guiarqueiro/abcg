@@ -3,7 +3,6 @@
 
 #include "abcg.hpp"
 #include "actiondata.hpp"
-#include "defaultvalues.hpp"
 #include "gamedata.hpp"
 #include "typedata.hpp"
 
@@ -38,7 +37,7 @@ class MotherShip {
   float m_scale{0.150f};
   int m_hpBase{};
   int m_currentLifePoints{};
-  glm::vec2 m_forward{0.0f, 1.0f};
+  glm::vec2 m_direction{0.0f, 1.0f};
   glm::vec2 m_translation{glm::vec2(0)};
   glm::vec2 m_velocity{glm::vec2(0)};
 

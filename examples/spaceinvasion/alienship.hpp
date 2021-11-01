@@ -4,7 +4,6 @@
 #include <random>
 
 #include "abcg.hpp"
-#include "defaultvalues.hpp"
 #include "mothership.hpp"
 #include "gamedata.hpp"
 #include "randomizer.hpp"
@@ -24,8 +23,6 @@ class AlienShip : public MotherShip {
   abcg::ElapsedTimer m_bulletCoolDownTimer;
   bool m_inInvertRegionFlag{false};
 
-  void updatePosition(float deltaTime);
-  void updateShooting();
   float getRandomNumber(float start, float end, bool requiresNegative);
 };
 

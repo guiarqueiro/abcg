@@ -5,14 +5,12 @@
 
 void PlayerShip::initializeGL(GLuint program) {
   terminateGL();
-
+  m_hpBase = 5;
+  m_currentLifePoints = m_hpBase;
   m_program = program;
   m_colorLoc = glGetUniformLocation(m_program, "color");
   m_scaleLoc = glGetUniformLocation(m_program, "scale");
   m_translationLoc = glGetUniformLocation(m_program, "translation");
-
-  m_hpBase = 5;
-  m_currentLifePoints = m_hpBase;
   m_translation = glm::vec2(0, -0.70f);
   
 
@@ -60,14 +58,11 @@ void PlayerShip::initializeGL(GLuint program) {
 
 void PlayerShip::paintGL(const GameData &gameData) {
   if (gameData.m_state != State::Playing) return;
-
   glUseProgram(m_program);
   glBindVertexArray(m_vao);
   glUniform1f(m_scaleLoc, m_scale);
   glUniform2fv(m_translationLoc, 1, &m_translation.x);
-  
-  m_color = DefaultValues::lightBlue;
-
+  m_color = {0.0f, 0.90f, 1.0f, 1.0f};
   glUniform4fv(m_colorLoc, 1, &m_color.r);
   glDrawElements(GL_TRIANGLES, 10 * 3, GL_UNSIGNED_INT, nullptr);
   glBindVertexArray(0);
@@ -78,6 +73,11 @@ void PlayerShip::terminateGL() {
   glDeleteBuffers(1, &m_vbo);
   glDeleteBuffers(1, &m_ebo);
   glDeleteVertexArrays(1, &m_vao);
+}
+
+bool PlayerShip::reachMouse() {
+  float space = glm::abs(m_lastMousePosition - m_translation.x);
+  return space < 0.01f;
 }
 
 void PlayerShip::update(float deltaTime) {
@@ -92,8 +92,3 @@ void PlayerShip::update(float deltaTime) {
 }
 
 void PlayerShip::takeDamage() { m_currentLifePoints--; }
-
-bool PlayerShip::reachMouse() {
-  float space = glm::abs(m_lastMousePosition - m_translation.x);
-  return space < 0.01f;
-}
