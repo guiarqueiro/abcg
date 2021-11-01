@@ -9,6 +9,7 @@ Os controles são feitos por meio do movimento do mouse para mover sua nave, e o
 ----
 
 O código foi desenvolvido utilizando a biblioteca ABCg, com OpenGL, com elementos da tela principal e janelas de fim de jogo em ImGUI.
+Utilizamos como inspiração o jogo Asteroids disponibilizado pelo professor Harlen em: https://hbatagelo.github.io/cg/asteroids.html
 
 ----
 URL: https://guiarqueiro.github.io/abcg/public/index.html
