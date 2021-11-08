@@ -11,6 +11,7 @@ class OpenGLWindow;
 
 class MotherShip {
  public:
+  virtual ~MotherShip() = default;
   virtual void paintGL(const GameData &gameData) = 0;
   virtual void terminateGL() = 0;
   virtual void takeDamage() = 0;

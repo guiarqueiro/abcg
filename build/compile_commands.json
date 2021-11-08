@@ -1,117 +1,117 @@
 [
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_application.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_application.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_application.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_application.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_application.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_application.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_elapsedtimer.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_elapsedtimer.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_elapsedtimer.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_elapsedtimer.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_elapsedtimer.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_elapsedtimer.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_exception.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_exception.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_exception.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_exception.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_exception.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_exception.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_image.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_image.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_image.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_image.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_image.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_image.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglfunctions.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglfunctions.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglfunctions.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglfunctions.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglfunctions.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglfunctions.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglwindow.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglwindow.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglwindow.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_openglwindow.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglwindow.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_openglwindow.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_string.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_string.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_string.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_string.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_string.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_string.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\CMakeFiles\\abcg.dir\\abcg_trackball.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_trackball.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_trackball.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS=\"[\"\"jpg\"\",\"\"png\"\"]\" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o abcg\\CMakeFiles\\abcg.dir\\abcg_trackball.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_trackball.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\abcg_trackball.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_demo.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_demo.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_demo.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_demo.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_demo.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_demo.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_draw.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_draw.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_draw.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_draw.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_draw.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_draw.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_tables.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_tables.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_tables.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_tables.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_tables.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_tables.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_widgets.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_widgets.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_widgets.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_widgets.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_widgets.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_widgets.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_sdl.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_sdl.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_sdl.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_sdl.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_sdl.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_sdl.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -g -flto -fno-fat-lto-objects -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_opengl3.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_opengl3.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_opengl3.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -O3 -DNDEBUG -flto=thin -s USE_SDL=2 -o abcg\\external\\imgui\\CMakeFiles\\imgui.dir\\imgui_impl_opengl3.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_opengl3.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\imgui\\imgui_impl_opengl3.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -g -flto -fno-fat-lto-objects -std=gnu++2a -o abcg\\external\\fmt\\CMakeFiles\\fmt.dir\\format.cc.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\fmt\\format.cc",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\abcg\\external\\fmt\\format.cc"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -O3 -DNDEBUG -flto=thin -std=gnu++20 -o abcg\\external\\fmt\\CMakeFiles\\fmt.dir\\format.cc.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\fmt\\format.cc",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\abcg\\external\\fmt\\format.cc"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\main.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\main.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\main.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\main.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\main.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\main.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\openglwindow.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\openglwindow.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\openglwindow.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\openglwindow.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\openglwindow.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\openglwindow.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\bullets.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\bullets.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\bullets.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\bullets.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\bullets.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\bullets.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\playership.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\playership.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\playership.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\playership.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\playership.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\playership.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\alienship.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\alienship.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\alienship.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\alienship.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\alienship.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\alienship.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\randomizer.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\randomizer.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\randomizer.cpp"
 },
 {
-  "directory": "C:/Users/GUILHERME/Documents/CG_UFABC/abcg/build",
-  "command": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -IC:/msys64/mingw64/include/SDL2 -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/GUILHERME/Documents/CG_UFABC/abcg/abcg/external -g -flto -fno-fat-lto-objects -Wall -Wextra -pedantic -std=gnu++2a -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\starlayers.cpp.obj -c C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp",
-  "file": "C:\\Users\\GUILHERME\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp"
+  "directory": "C:/Users/Guilherme/Documents/CG_UFABC/abcg/build",
+  "command": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\emsdk\\upstream\\emscripten\\em++.bat -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/abcg/abcg/external -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o examples\\spaceinvasion\\CMakeFiles\\SpaceInvasion.dir\\starlayers.cpp.o -c C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp",
+  "file": "C:\\Users\\Guilherme\\Documents\\CG_UFABC\\abcg\\examples\\spaceinvasion\\starlayers.cpp"
 }
 ]

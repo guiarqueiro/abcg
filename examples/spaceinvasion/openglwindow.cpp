@@ -61,6 +61,9 @@ void OpenGLWindow::restart() {
 
   m_starLayers.initializeGL(m_starsProgram, 25);
   m_player.initializeGL(m_objectsProgram);
+  
+  for (auto &enemy : m_aliens) enemy.terminateGL();
+
   m_aliens.clear();
   int AlienQtt = 5;
   m_aliens.resize(AlienQtt);
